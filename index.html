@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot Estatuto UASD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Chatbot Estatuto Orgánico UASD</h1>
+
+    <div class="suggestions">
+        <button onclick="askQuestion('¿Qué es la UASD?')">¿Qué es la UASD?</button>
+        <button onclick="askQuestion('¿Cuál es la misión de la UASD?')">Misión</button>
+        <button onclick="askQuestion('¿Qué es el Claustro Mayor?')">Claustro Mayor</button>
+        <button onclick="askQuestion('¿Cuáles son los derechos de los estudiantes?')">Derechos estudiantes</button>
+    </div>
+
+    <div id="chat"></div>
+
+    <div class="input-area">
+        <input type="text" id="question" placeholder="Escribe tu pregunta">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
